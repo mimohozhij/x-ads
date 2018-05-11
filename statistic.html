@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>X-ads</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+	<script src="js/plugins.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<div class="header__lane">
+				<div class="header__layout">
+					<a href="" class="logo header__logo"></a>
+					<ul class="menu header__menu">
+						<li class="menu__item">
+							<a href="" class="menu__link menu__link_active">Статистика</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Офферы</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Инструменты</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Финансы</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Помощь</a>
+						</li>
+					</ul>
+					<div class="header__user-block">
+						<div class="header__balance balance">
+							<span class="balance__icon"></span>
+							<span class="balance__text">0.00 Р.</span>
+						</div>
+						<div class="header__user-menu user-menu">
+							<span class="user-menu__user-icon"></span>
+							<span class="user-menu__username">rk@x-ads.ru</span>
+							<ul class="user-menu__list user-menu__list_type_dropdown">
+								<li class="user-menu__list-item">
+									<a href="" class="user-menu__link user-menu__logout">rk@x-ads.ru</a>
+								</li>
+								<li class="user-menu__list-item">
+									<a href="" class="user-menu__link">Рефералы</a>
+								</li>
+							</ul>
+							<div class="overlay-close"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__lane">
+				<div class="header__layout">
+					<ul class="submenu header__menu">
+						<li class="submenu__item">
+							<a href="" class="submenu__link submenu__link_active">По дате</a>
+						</li>
+						<li class="submenu__item">
+							<a href="" class="submenu__link">По лендингам</a>
+						</li>
+						<li class="submenu__item">
+							<a href="" class="submenu__link">По прелендингам</a>
+						</li>
+						<li class="submenu__item">
+							<a href="" class="submenu__link">По офферам</a>
+						</li>
+						<li class="submenu__item">
+							<a href="" class="submenu__link">По SubId</a>
+						</li>
+						<li class="submenu__item">
+							<a href="" class="submenu__link">По потокам</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main__layout">
+				<div class="content">
+					<div class="icon-refresh content__refresh"></div>
+					<div class="filter content__filter">
+						<div class="filter__item">
+							<select name="offer" class="filter__list">
+								<option>Оффер</option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="filter__item">
+							<select name="stream" class="filter__list">
+								<option>Поток</option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="filter__item">
+							<a href="" class="filter__link filter__link_type_save">Сохранить фильтр</a>
+						</div>
+						<div class="filter__item">
+							<a href="" class="filter__link filter__link_type_reset">Сбрость фильтр</a>
+						</div>
+					</div>
+					<table class="table content__table">
+						<thead class="table__head">
+							<tr class="table__row">
+								<td colspan="3" class="table__cell">
+									Трафик
+								</td>
+								<td colspan="4" class="table__cell">
+									Действия
+								</td>
+								<td colspan="4" class="table__cell">
+									Конверсия
+								</td>
+								<td colspan="4" class="table__cell">
+									Финансы
+								</td>
+							</tr>
+						</thead>
+						<tbody class="table__data">
+							<tr class="table__subtitle table__row">
+								<td class="table__cell">
+									Дата
+								</td>
+								<td class="table__cell">
+									Клики
+								</td>
+								<td class="table__cell">
+									Хосты
+								</td>
+								<td class="table__cell">
+									Всего
+								</td>
+								<td class="table__cell">
+									Проверка
+								</td>
+								<td class="table__cell">
+									Принято
+								</td>
+								<td class="table__cell">
+									Отклонено
+								</td>
+								<td class="table__cell">
+									CR%
+								</td>
+								<td class="table__cell">
+									EPC
+								</td>
+								<td class="table__cell">
+									IR%
+								</td>
+								<td class="table__cell">
+									Approve
+								</td>
+								<td class="table__cell">
+									Всего
+								</td>
+								<td class="table__cell">
+									Проверка
+								</td>
+								<td class="table__cell">
+									Принято
+								</td>
+								<td class="table__cell">
+									Отклонено
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">
+									27.03.18
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+							</tr>
+						</tbody>
+						<tfoot class="table__foot">
+							<tr class="table__row">
+								<td class="table__cell table__title">
+									Итог
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell">
+									0
+								</td>
+								<td class="table__cell table__cell_type_hold">
+									0
+								</td>
+								<td class="table__cell table__cell_type_accept">
+									0
+								</td>
+								<td class="table__cell table__cell_type_reject">
+									0
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00
+								</td>
+								<td class="table__cell">
+									0.00 Р.
+								</td>
+								<td class="table__cell table__cell_type_hold">
+									0.00 Р.
+								</td>
+								<td class="table__cell table__cell_type_accept">
+									0.00 Р.
+								</td>
+								<td class="table__cell table__cell_type_reject">
+									0.00 Р.
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__layout">
+				<a href="" class="logo footer__logo"></a>
+				<div class="footer__copyright">&copy; 2016 Все права защищены. x-ads.ru</div>
+				<div class="lang-switcher">
+					<ul class="lang-switcher__list">
+						<li class="lang-switcher__item lang-switcher__item_ru">
+							<a href="" class="lang-switcher__link">Русский</a>
+						</li>
+						<li class="lang-switcher__item lang-switcher__item_en">
+							<a href="" class="lang-switcher__link">English</a>
+						</li>
+					</ul>
+					<div class="overlay-close"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
